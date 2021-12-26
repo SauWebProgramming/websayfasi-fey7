@@ -10,3 +10,29 @@ body
     font-family: 'Playfair Display', serif;
 }
 
+.hakkimizda
+{
+    background-color: #d870935b ;
+}
+
+.line
+{
+    border: 1px solid black;
+}
+
+.font
+{
+    font: bolder;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.hcard>img:hover
+{
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+
+
+
+
