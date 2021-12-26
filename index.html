@@ -10,6 +10,12 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
@@ -17,6 +23,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="icon" href="img/iconn.png" type="image/x-icon">
+
+
 
     <title>HAE'S</title>
   </head>
@@ -59,67 +67,68 @@
     <!--Slider Başlangıç-->
     
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/fantastic.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Fantastic Beasts and Where to Find Them</h5>
-              <p>2016 - Movies - IMDb: 7.3 - English</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/vincenzo2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Vincenzo</h5>
-              <p>2021 - TV Series - IMDb: 8.5 - Korean </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/parasite.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Parasite</h5>
-              <p>2019 - Movies - IMDb: 8.6 - Korean </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/spiderman.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Spider-Man: Homecoming</h5>
-              <p>2017 - Movies - IMDb: 7.4 - English </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/sweethome2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Sweet Home</h5>
-              <p>2020 - TV Series - IMDb: 7.4 - Korean </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/friends2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Friends</h5>
-              <p>1994 ~ 2004 - TV Series - IMDb: 8.8 - English</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
       </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/fantastic.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Fantastic Beasts and Where to Find Them</h5>
+            <p>2016 - Movies - IMDb: 7.3 - English</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/vincenzo2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Vincenzo</h5>
+            <p>2021 - TV Series - IMDb: 8.5 - Korean </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/parasite.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Parasite</h5>
+            <p>2019 - Movies - IMDb: 8.6 - Korean </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/spiderman.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Spider-Man: Homecoming</h5>
+            <p>2017 - Movies - IMDb: 7.4 - English </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/sweethome2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Sweet Home</h5>
+            <p>2020 - TV Series - IMDb: 7.4 - Korean </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/friends2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Friends</h5>
+            <p>1994 ~ 2004 - TV Series - IMDb: 8.8 - English</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
 
     <!--Slider Bitiş-->
 
@@ -163,8 +172,8 @@
 
             <div class="row row-cols-1 row-cols-md-4 g-4">
 
-                <div class="col">
-                  <div class="card hcard">
+                <div class="col ">
+                  <div class="card hcard shadow">
                     <img src="img/vincenzo2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title font">VINCENZO</h5>
@@ -176,8 +185,8 @@
                   </div>
                 </div>
 
-                <div class="col">
-                  <div class="card hcard">
+                <div class="col ">
+                  <div class="card hcard shadow">
                     <img src="img/alice2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title font">ALICE IN BORDERLAND</h5>
@@ -189,8 +198,8 @@
                   </div>
                 </div>
 
-                <div class="col">
-                  <div class="card hcard">
+                <div class="col ">
+                  <div class="card hcard shadow">
                     <img src="img/black.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title font">BLACK MIRROR</h5>
@@ -202,8 +211,8 @@
                   </div>
                 </div>
 
-                <div class="col">
-                  <div class="card hcard">
+                <div class="col ">
+                  <div class="card hcard shadow">
                     <img src="img/counter.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title font ">THE UNCANNY COUNTER</h5>
@@ -215,8 +224,8 @@
                   </div>
                 </div>
 
-                <div class="col">
-                    <div class="card hcard">
+                <div class="col ">
+                    <div class="card hcard shadow">
                       <img src="img/dragon.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title font">WISH DRAGON</h5>
@@ -228,8 +237,8 @@
                     </div>
                   </div>
 
-                  <div class="col">
-                    <div class="card hcard">
+                  <div class="col ">
+                    <div class="card hcard shadow">
                       <img src="img/silent.jpeg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title font">THE SILENT SEA</h5>
@@ -241,8 +250,8 @@
                     </div>
                   </div>
 
-                  <div class="col">
-                    <div class="card hcard">
+                  <div class="col ">
+                    <div class="card hcard shadow">
                       <img src="img/fantastic.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title font">FANTASTIC BEASTS 1</h5>
@@ -254,8 +263,8 @@
                     </div>
                   </div>
 
-                  <div class="col">
-                    <div class="card hcard">
+                  <div class="col ">
+                    <div class="card hcard shadow">
                       <img src="img/friends2.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title font">FRIENDS</h5>
@@ -268,7 +277,7 @@
                   </div>
 
                   <div class="col">
-                    <div class="card hcard">
+                    <div class="card hcard shadow">
                       <img src="img/frozen.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title font">FROZEN 2</h5>
@@ -281,7 +290,7 @@
                   </div>
 
                   <div class="col">
-                    <div class="card hcard">
+                    <div class="card hcard shadow">
                       <img src="img/hp.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title font">HARRY POTTER & THE DEATHLY HALLOWS </h5>
@@ -294,7 +303,7 @@
                   </div>
 
                   <div class="col">
-                    <div class="card hcard">
+                    <div class="card hcard shadow">
                       <img src="img/parasite.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title font">PARASITE</h5>
@@ -307,7 +316,7 @@
                   </div>
 
                   <div class="col">
-                    <div class="card hcard">
+                    <div class="card hcard shadow">
                       <img src="img/sherlock2.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title font">SHERLOCK</h5>
@@ -320,7 +329,7 @@
                   </div>
 
                   <div class="col">
-                    <div class="card hcard">
+                    <div class="card hcard shadow">
                       <img src="img/sweethome2.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title font">SWEET HOME</h5>
@@ -333,7 +342,7 @@
                   </div>
 
                   <div class="col">
-                    <div class="card hcard">
+                    <div class="card hcard shadow">
                       <img src="img/toystory4.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title font">TOY STORY 4</h5>
@@ -346,7 +355,7 @@
                   </div>
 
                   <div class="col">
-                    <div class="card hcard">
+                    <div class="card hcard shadow">
                       <img src="img/spiderman.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title font">SPIDER-MAN HOME COMING</h5>
@@ -359,7 +368,7 @@
                   </div>
 
                   <div class="col">
-                    <div class="card hcard">
+                    <div class="card hcard shadow">
                       <img src="img/stratup2.jpg" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title font">START-UP</h5>
@@ -380,7 +389,152 @@
 
     </section>
 
-    <!--Dizi-Film Başlangıç-->
+    <!--Dizi-Film Bitiş-->
+
+    <!--Galeri Başlangıç-->
+
+    <section class="p-5 text-center galeri">
+      <div class ="container">
+
+          <h2 class="mb-3 font-weight-bold">Gallery</h2>
+
+          <hr class="line"> 
+
+          <div class="row">
+
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/dragonP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/dragonP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/silentP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/silentP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/fantasticP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/fantasticP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+            
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/frozenP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/frozenP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/hpP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/hpP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/friendsP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/friendsP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/sherlockP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/sherlockP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/spidermanP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/spidermanP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/startupP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/startupP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/sweethomeP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/sweethomeP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/toyP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/toyP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/sweeperP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/sweeperP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+
+            <div class="col-md-3 img">
+              <figure class="figure  ">
+                <a href="img/vincenzoP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/vincenzoP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/aliceP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/aliceP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/blackP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/blackP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+
+            <div class="col-md-3 img">
+              <figure class="figure ">
+                <a href="img/counterP.jpg" class="fancybox" data-fancybox="gallery1">
+                 <img src="img/counterP.jpg" class="figure-img img-fluid rounded" alt="...">
+                </a> 
+              </figure>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+    <!--Galeri Bitiş-->
 
 
 

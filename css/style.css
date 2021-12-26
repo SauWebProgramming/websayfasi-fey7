@@ -29,9 +29,32 @@ body
 
 .hcard>img:hover
 {
-    opacity: 0.8;
+    /*opacity: 0.8;*/
     transform: scale(1.1);
 }
+
+.shadow
+{
+    box-shadow: #d870935b;
+}
+
+.shadow>div:hover
+{
+    background-color: #d870935b ;
+    transition: .5s ease-in-out;
+}
+
+.galeri
+{
+    background-color: #d870935b ;
+}
+
+.img>figure:hover
+{
+    filter: brightness(60%);
+}
+
+
 
 
 
